@@ -20,10 +20,11 @@ function draw() {
             document.getElementById("status").innerHTML = "Status: OBJECTS DETECTED";
             document.getElementById("number_of_object").innerHTML = "The number of objects detected are: " + objects.length;
             percent = floor(objects[i].confidence * 100);
-            fill(RED);
-            stroke(RED);
+            fill("#FF0000");
+            stroke("#FF0000");
             text(objects[i].label + ":" + percent + "%", objects[i].x, objects[i].y);
-
+            noFill();
+            rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
         }
     }
 }

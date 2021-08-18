@@ -20,6 +20,8 @@ body {
     padding: 5px;
     width: 500px;
     height: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .copy_right_footer {
